@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título do filme" />
+
+    <EditText
+        android:id="@+id/edtDiretor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Diretor" />
+
+    <EditText
+        android:id="@+id/edtGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gênero" />
+
+    <EditText
+        android:id="@+id/edtAno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Ano de lançamento" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar" />
+
+    <Button
+        android:id="@+id/btnExcluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_red_light"/>
+</LinearLayout>
