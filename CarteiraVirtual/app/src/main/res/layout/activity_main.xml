@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carteira Virtual"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:paddingBottom="32dp"
+        android:textColor="#222222"/>
+
+    <TextView
+        android:id="@+id/txtReal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$: 0,00"
+        android:textSize="20sp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/txtDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$: 0,00"
+        android:textSize="20sp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/txtBtc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTC: 0,0000"
+        android:textSize="20sp"
+        android:paddingBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter Moeda"/>
+</LinearLayout>
+
