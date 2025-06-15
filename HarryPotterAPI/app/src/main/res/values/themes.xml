@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema Base -->
+    <style name="Base.Theme.HarryPotterAPI" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Paleta personalizada -->
+        <item name="colorPrimary">@color/vermelho_hogwarts</item>
+        <item name="colorSecondary">@color/vermelho_hogwarts</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- 🔥 Controla a cor dos componentes selecionáveis -->
+        <item name="colorControlActivated">@color/vermelho_hogwarts</item>
+
+        <!-- StatusBar seguindo a cor principal -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Tema aplicado na aplicação -->
+    <style name="Theme.HarryPotterAPI" parent="Base.Theme.HarryPotterAPI" />
+</resources>

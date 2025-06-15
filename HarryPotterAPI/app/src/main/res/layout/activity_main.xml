@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Harry Potter API"
+        android:textColor="#D3A625"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- Botão Personagem -->
+    <Button
+        android:id="@+id/btnPersonagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar Personagem por ID"
+        android:backgroundTint="#740001"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Botão Professor -->
+    <Button
+        android:id="@+id/btnProfessor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar Professores"
+        android:backgroundTint="#740001"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botão Estudantes -->
+    <Button
+        android:id="@+id/btnEstudantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listar Estudantes por Casa"
+        android:backgroundTint="#740001"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botão Feitiços -->
+    <Button
+        android:id="@+id/btnFeiticos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Feitiços"
+        android:backgroundTint="#740001"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botão Sair -->
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:backgroundTint="#740001"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+
+
