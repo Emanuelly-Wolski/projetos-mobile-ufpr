@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/txtTituloCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transações"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Tipo da operação -->
+        <RadioGroup
+            android:id="@+id/radioTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/radioCredito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crédito" />
+
+            <RadioButton
+                android:id="@+id/radioDebito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Débito"
+                android:layout_marginStart="32dp" />
+        </RadioGroup>
+
+        <!-- Descrição -->
+        <EditText
+            android:id="@+id/editDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Valor com prefixo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+
+
+            <EditText
+                android:id="@+id/editValor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Valor"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <!-- Botão Salvar -->
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="48dp" />
+    </LinearLayout>
+</ScrollView>

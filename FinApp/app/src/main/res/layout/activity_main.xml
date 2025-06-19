@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <!-- Espaço superior -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Título centralizado -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FinApp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="36dp" />
+
+    <!-- Botão Transações -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/transaction"
+            android:layout_marginEnd="12dp" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Transações" />
+    </LinearLayout>
+
+    <!-- Botão Extrato -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/extrato"
+            android:layout_marginEnd="12dp" />
+
+        <Button
+            android:id="@+id/btnExtrato"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Extrato" />
+    </LinearLayout>
+
+    <!-- Espaço inferior -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Botão Sair -->
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D32F2F"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+</LinearLayout>

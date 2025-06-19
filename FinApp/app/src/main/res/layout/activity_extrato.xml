@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutExtrato"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/txtTituloExtrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extrato"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Filtros -->
+    <RadioGroup
+        android:id="@+id/rgFiltro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rbTodos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todos"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbDebitos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Débitos" />
+
+        <RadioButton
+            android:id="@+id/rbCreditos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créditos" />
+    </RadioGroup>
+
+    <!-- Lista de transações -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerExtrato"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Saldo -->
+    <TextView
+        android:id="@+id/txtSaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saldo: R$ 0,00"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:paddingTop="8dp" />
+</LinearLayout>
